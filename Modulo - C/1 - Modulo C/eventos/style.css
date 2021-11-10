@@ -1,0 +1,76 @@
+#caixa {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(40, 12, 85);
+  position: absolute;
+  left: 210px;
+  top: 10px;
+
+  border-radius: 100%;
+}
+
+#texto_caixa {
+  color: red;
+}
+
+.center {
+  margin: auto;
+  padding: 10px;
+  width: 50%;
+  height: 50%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+}
+
+#controls i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#controls {
+  display: inline-grid;
+  grid-column-gap: 0;
+  align-self: end;
+}
+
+.movements_control {
+  border: solid 1px black;
+  margin: 0;
+  padding: 0;
+}
+
+#keyboard_key_up {
+  grid-column-start: 2;
+}
+
+#keyboard_key_left {
+  grid-column-start: 1;
+}
+
+#keyboard_key_right {
+  grid-column-start: 3;
+}
+
+@media (min-width: 721px) {
+  .movements_control {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .movements_control {
+    width: 20px;
+    height: 20px;
+  }
+}
